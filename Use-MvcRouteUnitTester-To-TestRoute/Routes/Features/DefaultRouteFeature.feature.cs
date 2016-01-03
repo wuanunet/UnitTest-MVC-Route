@@ -4,29 +4,30 @@
 //      SpecFlow Version:1.9.0.77
 //      SpecFlow Generator Version:1.9.0.0
 //      Runtime Version:4.0.30319.42000
-// 
+//
 //      Changes to this file may cause incorrect behavior and will be lost if
 //      the code is regenerated.
 //  </auto-generated>
 // ------------------------------------------------------------------------------
+
 #region Designer generated code
+
 #pragma warning disable
+
 namespace Use_MvcRouteUnitTester_To_TestRoute.Routes.Features
 {
     using TechTalk.SpecFlow;
-    
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
     public partial class DefaultRouteFeatureFeature
     {
-        
         private static TechTalk.SpecFlow.ITestRunner testRunner;
-        
+
 #line 1 "DefaultRouteFeature.feature"
 #line hidden
-        
+
         [Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute()]
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
@@ -34,40 +35,40 @@ namespace Use_MvcRouteUnitTester_To_TestRoute.Routes.Features
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "DefaultRouteFeature", "為了確保網站的預設路由設定正確\r\n  讓運行可以正常運作", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
-        
+
         [Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute()]
         public static void FeatureTearDown()
         {
             testRunner.OnFeatureEnd();
             testRunner = null;
         }
-        
+
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute()]
         public virtual void TestInitialize()
         {
-            if (((TechTalk.SpecFlow.FeatureContext.Current != null) 
+            if (((TechTalk.SpecFlow.FeatureContext.Current != null)
                         && (TechTalk.SpecFlow.FeatureContext.Current.FeatureInfo.Title != "DefaultRouteFeature")))
             {
                 Use_MvcRouteUnitTester_To_TestRoute.Routes.Features.DefaultRouteFeatureFeature.FeatureSetup(null);
             }
         }
-        
+
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute()]
         public virtual void ScenarioTearDown()
         {
             testRunner.OnScenarioEnd();
         }
-        
+
         public virtual void ScenarioSetup(TechTalk.SpecFlow.ScenarioInfo scenarioInfo)
         {
             testRunner.OnScenarioStart(scenarioInfo);
         }
-        
+
         public virtual void ScenarioCleanup()
         {
             testRunner.CollectScenarioErrors();
         }
-        
+
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("檢查出應該存在且正確的預設路由設定")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "DefaultRouteFeature")]
@@ -75,19 +76,19 @@ namespace Use_MvcRouteUnitTester_To_TestRoute.Routes.Features
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("檢查出應該存在且正確的預設路由設定", ((string[])(null)));
 #line 6
-this.ScenarioSetup(scenarioInfo);
+            this.ScenarioSetup(scenarioInfo);
 #line 7
- testRunner.Given("外部呼叫的網址為 \"Home/Index\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+            testRunner.Given("外部呼叫的網址為 \"Home/Index\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 8
- testRunner.When("在進入網站，經過路由配對流程之後", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+            testRunner.When("在進入網站，經過路由配對流程之後", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 9
- testRunner.Then("配對結果，預期符合Controller為 \"Home\"，Action為 \"Index\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+            testRunner.Then("配對結果，預期符合Controller為 \"Home\"，Action為 \"Index\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 10
-    testRunner.And("且這個比對結果是存在又正確的路由", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+            testRunner.And("且這個比對結果是存在又正確的路由", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }
-        
+
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("檢查出不存在的預設路由設定")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "DefaultRouteFeature")]
@@ -95,17 +96,19 @@ this.ScenarioSetup(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("檢查出不存在的預設路由設定", ((string[])(null)));
 #line 12
-this.ScenarioSetup(scenarioInfo);
+            this.ScenarioSetup(scenarioInfo);
 #line 13
- testRunner.Given("外部呼叫的網址為 \"Home/Index/1/Test\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+            testRunner.Given("外部呼叫的網址為 \"Home/Index/1/Test\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 14
- testRunner.When("在進入網站，經過路由配對流程之後", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+            testRunner.When("在進入網站，經過路由配對流程之後", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 15
- testRunner.Then("配對結果，預期是一個不存在的路由", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+            testRunner.Then("配對結果，預期是一個不存在的路由", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
     }
 }
+
 #pragma warning restore
-#endregion
+
+#endregion Designer generated code
