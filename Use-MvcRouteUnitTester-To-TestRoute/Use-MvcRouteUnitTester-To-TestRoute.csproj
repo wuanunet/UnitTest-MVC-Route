@@ -103,7 +103,7 @@
       <DependentUpon>ImagesRouteFeature.feature</DependentUpon>
     </Compile>
     <Compile Include="Routes\Features\ImagesRouteFeatureSteps.cs" />
-    <Compile Include="Routes\RouteConfigTest.cs" />
+    <Compile Include="Routes\RouteConfigTest_ByMvcRouteUnitTester.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

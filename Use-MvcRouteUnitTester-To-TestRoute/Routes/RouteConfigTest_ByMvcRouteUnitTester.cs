@@ -6,10 +6,10 @@ using System.Web.Routing;
 namespace Use_MvcRouteUnitTester_To_TestRoute.Routes
 {
     [TestClass]
-    public class RouteConfigTest
+    public class RouteConfigTest_ByMvcRouteUnitTester
     {
         [TestMethod]
-        public void DefaultRoute_RouteTest()
+        public void DefaultRouteTest()
         {
             //// Arrange
             var routes = new RouteCollection();
