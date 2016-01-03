@@ -6,11 +6,12 @@ namespace Sample.MVC.Controllers
 {
     public class ImagesController : Controller
     {
+        [HttpGet]
         public ActionResult RenderOriginal(string type, string id)
         {
             var result = new ImageDataViewModel
             {
-                FileName = "Test",
+                FileName = "TestFromMVC",
                 LastModifiedTime = DateTime.UtcNow
             };
 
