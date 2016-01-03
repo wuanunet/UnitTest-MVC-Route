@@ -6,7 +6,7 @@ namespace Sample.MVC.Controllers
 {
     public class ImagesController : Controller
     {
-        public ImageDataViewModel RenderOriginal(string type, string id)
+        public ActionResult RenderOriginal(string type, string id)
         {
             var result = new ImageDataViewModel
             {
@@ -14,7 +14,7 @@ namespace Sample.MVC.Controllers
                 LastModifiedTime = DateTime.UtcNow
             };
 
-            return result;
+            return Json(result, JsonRequestBehavior.AllowGet);
         }
     }
 }
