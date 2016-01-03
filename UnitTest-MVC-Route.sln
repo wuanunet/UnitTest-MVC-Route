@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.MVC", "Sample.MVC\Sample.MVC.csproj", "{FB66EC18-D334-4024-BEB7-CEA7E39FA2CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Use-MvcRouteUnitTester-To-TestRoute", "Use-MvcRouteUnitTester-To-TestRoute\Use-MvcRouteUnitTester-To-TestRoute.csproj", "{93B9A814-1FDC-4215-9C26-BEE661CC3E40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB66EC18-D334-4024-BEB7-CEA7E39FA2CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB66EC18-D334-4024-BEB7-CEA7E39FA2CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB66EC18-D334-4024-BEB7-CEA7E39FA2CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB66EC18-D334-4024-BEB7-CEA7E39FA2CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93B9A814-1FDC-4215-9C26-BEE661CC3E40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93B9A814-1FDC-4215-9C26-BEE661CC3E40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93B9A814-1FDC-4215-9C26-BEE661CC3E40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93B9A814-1FDC-4215-9C26-BEE661CC3E40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(CodealikeProperties) = postSolution
+		SolutionGuid = 05d4eb87-d260-41e8-91a3-11b2854960d6
+	EndGlobalSection
+EndGlobal
