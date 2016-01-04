@@ -1,34 +1,40 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MvcRouteTester;
-using Sample.WebAPI;
-using Sample.WebAPI.Controllers;
+using Sample.MVC;
+using Sample.MVC.Controllers;
+using System;
 using System.Net.Http;
-using System.Web.Http;
+using System.Web.Routing;
 
 namespace Use_MvcRouteTester_To_TestRoute.Routes
 {
     [TestClass]
-    public class ImagesApiRouteTest
+    public class ImagesMvcRouteTest : IDisposable
     {
-        private HttpConfiguration testConfig;
+        private RouteCollection testRoutes;
 
-        public ImagesApiRouteTest()
+        public ImagesMvcRouteTest()
         {
             //// Arrange
-            testConfig = new HttpConfiguration();
-            WebApiConfig.Register(testConfig);
+            testRoutes = new RouteCollection();
+            RouteConfig.RegisterRoutes(testRoutes);
+        }
+
+        public void Dispose()
+        {
+            testRoutes.Clear();
         }
 
         [TestMethod]
         public void ImagesRoute_RouteWith_Controller_Index_Action_Type_Id_ShouldMapToRenderOriginal()
         {
-            testConfig.ShouldMap("/api/Images/Original/type/1")
+            testRoutes.ShouldMap("/Images/Original/type/1")
                       .To<ImagesController>(c => c.RenderOriginal(string.Empty, string.Empty));
 
-            testConfig.ShouldMap("/api/Images/Original/type/1")
+            testRoutes.ShouldMap("/Images/Original/type/1")
                       .To<ImagesController>(HttpMethod.Get, c => c.RenderOriginal(string.Empty, string.Empty));
 
-            testConfig.ShouldMap("/api/Images/Original/type/1")
+            testRoutes.ShouldMap("/Images/Original/type/1")
                       .To<ImagesController>(HttpMethod.Post, c => c.RenderOriginal(string.Empty, string.Empty));
         }
     }

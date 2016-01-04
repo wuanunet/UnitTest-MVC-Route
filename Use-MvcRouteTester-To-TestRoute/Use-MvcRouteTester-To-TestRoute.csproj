@@ -102,10 +102,10 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Routes\ImagesApiRouteTest.cs" />
+    <Compile Include="Routes\ImagesMvcRouteTest.cs" />
     <Compile Include="Routes\RouteConfigTest_ByMvcRouteTester.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Routes\ImagesMvcRouteTest.cs" />
+    <Compile Include="Routes\ImagesApiRouteTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Sample.MVC\Sample.MVC.csproj">
