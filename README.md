@@ -35,10 +35,6 @@
 這是使用 **MvcRouteTester** 套件，來做 ASP.NET MVC Route 測試的範例專案
 
 
-
-
-
-
 ## Commit Logs
 
 ### 2016-01-03
@@ -52,6 +48,9 @@
 
 ### 2016-01-05
 * BTS003 - 修正ImagesMvcRouteTest與ImagesApiRouteTest命名的錯誤。
+
+### 2016-01-06
+* BTS004 - 調整 WebAPI - ImagesController，HttpGet與HttpPost的測試案例。
 
 
 
