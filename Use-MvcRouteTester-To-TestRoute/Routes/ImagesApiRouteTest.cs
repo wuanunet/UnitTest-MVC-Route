@@ -21,19 +21,26 @@ namespace Use_MvcRouteTester_To_TestRoute.Routes
         }
 
         /// <summary>
-        /// api/Images/Original/type/1 測試
+        /// 使用 HttpMethod Get 進行 api/Images/Original/type/1 測試
         /// </summary>
         [TestMethod]
-        public void ImagesRoute_RouteWith_Controller_Index_Action_Type_Id_ShouldMapToRenderOriginal()
+        public void ImagesRoute_WithHttpMethod_Get_RouteWith_Controller_Index_Action_Type_Id_ShouldMapToRenderOriginal()
         {
             testConfig.ShouldMap("/api/Images/Original/type/1")
                       .To<ImagesController>(c => c.RenderOriginal(string.Empty, string.Empty));
 
             testConfig.ShouldMap("/api/Images/Original/type/1")
                       .To<ImagesController>(HttpMethod.Get, c => c.RenderOriginal(string.Empty, string.Empty));
+        }
 
+        /// <summary>
+        /// 預期 沒有 HttpMethod Post 方法，可以呼叫到 api/Images/Original/type/1 測試
+        /// </summary>
+        [TestMethod]
+        public void ImagesRoute_NoHttpMethod_Post_RouteWith_Controller_Index_Action_Type_Id_ShouldMapToRenderOriginal()
+        {
             testConfig.ShouldMap("/api/Images/Original/type/1")
-                      .To<ImagesController>(HttpMethod.Post, c => c.RenderOriginal(string.Empty, string.Empty));
+                      .ToNoMethod<ImagesController>(HttpMethod.Post);
         }
     }
 }
