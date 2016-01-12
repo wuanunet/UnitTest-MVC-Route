@@ -102,6 +102,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Routes\ArticlesApiRouteTest.cs" />
     <Compile Include="Routes\ImagesMvcRouteTest.cs" />
     <Compile Include="Routes\RouteConfigTest_ByMvcRouteTester.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
