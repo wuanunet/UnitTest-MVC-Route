@@ -125,7 +125,7 @@ or
 #### 專案說明文：
 * [ASP.NET MVC Route Unit Test - Part.2 - MvcRouteTester - MVC Project](https://dotblogs.com.tw/wuanunet/2016/01/03/aspnet-mvc-route-unit-test-part2-with-mvcroutetester-library-for-mvc-project)
 * [ASP.NET MVC Route Unit Test - Part.3 - MvcRouteTester - WebAPI Project](https://dotblogs.com.tw/wuanunet/2016/01/05/aspnet-mvc-route-unit-test-part3-with-mvcroutetester-library-for-webapi-project)
-
+* [ASP.NET MVC Route Unit Test - Part.4 - MvcRouteTester - Attribute Routing](https://dotblogs.com.tw/wuanunet/2016/01/05/aspnet-mvc-route-unit-test-part4-with-mvcroutetester-library-for-attribute-routing)
 
 ## Commit Logs
 
@@ -144,7 +144,10 @@ or
 #### 2016-01-06
 * BTS004 - 調整 WebAPI - ImagesController，HttpGet與HttpPost的測試案例。
 
-
+#### 2016-01-14
+* BTS006 - MVC - 1.新增ArticlesController等相關程式。2.設定 Attribute Routing。
+* BTS006 - 新增ArticlesMvcRoute測試程式。
+* BTS006 - 修改ArticlesApiRoute測試案例描述，移除Type字樣。
 
 ----------
 
