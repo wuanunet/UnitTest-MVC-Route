@@ -144,6 +144,10 @@ or
 #### 2016-01-06
 * BTS004 - 調整 WebAPI - ImagesController，HttpGet與HttpPost的測試案例。
 
+#### 2016-01-12
+* BTS005 - WebAPI - 新增ArticlesController等相關程式。
+* BTS005 - 新增ArticlesApiRoute測試程式。
+
 #### 2016-01-14
 * BTS006 - MVC - 1.新增ArticlesController等相關程式。2.設定 Attribute Routing。
 * BTS006 - 新增ArticlesMvcRoute測試程式。
