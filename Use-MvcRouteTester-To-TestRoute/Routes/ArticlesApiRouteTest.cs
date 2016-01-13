@@ -33,7 +33,7 @@ namespace Use_MvcRouteTester_To_TestRoute.Routes
         /// 使用 HttpMethod Get 進行 /api/Articles/1 測試
         /// </summary>
         [TestMethod]
-        public void ArticlesRoute_WithHttpMethod_Get_RouteWith_Controller_Get_Action_Type_Id_ShouldMap()
+        public void ArticlesRoute_WithHttpMethod_Get_RouteWith_Controller_Get_Action_Id_ShouldMap()
         {
             testConfig.ShouldMap("/api/Articles/1")
                       .To<ArticlesController>(c => c.Get(string.Empty));
