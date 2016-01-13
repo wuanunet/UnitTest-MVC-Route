@@ -107,6 +107,7 @@
     <Compile Include="Routes\RouteConfigTest_ByMvcRouteTester.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Routes\ImagesApiRouteTest.cs" />
+    <Compile Include="Routes\ArticlesMvcRouteTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Sample.MVC\Sample.MVC.csproj">
